@@ -19,7 +19,7 @@ def encrypt(text, n):
         else:
             odd_chars.append(char)
         result_str = (''.join(even_chars)) + (''.join(odd_chars))
-    print(result_str)
+
     return encrypt(result_str, n - 1)
 
 c=encrypt(a, b)
@@ -38,6 +38,6 @@ def derypt(text, n):
         else:
             even_chars.append(char)
         result_str = (''.join(even_chars)) + (''.join(odd_chars))
-    print(result_str)
+
     return encrypt(result_str, n - 1)
 derypt(c,b)
